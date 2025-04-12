@@ -5,7 +5,6 @@ import Projects from './components/Projects';
 import { BsArrow90DegRight } from 'react-icons/bs';
 import Spinner from './components/Spinner';
 import { motion } from 'framer-motion';
-import { RiMvAiLine } from 'react-icons/ri';
 import { CiMail } from 'react-icons/ci';
 import { FaPhone } from 'react-icons/fa6';
 
