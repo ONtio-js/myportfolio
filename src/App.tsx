@@ -18,6 +18,7 @@ function App() {
 	}, []);
 	if (loading) {
 		return (
+			
 			<div className='h-screen w-screen flex flex-col items-center justify-center'>
 				<div className=' w-[200px] md:w-[400px]'>
 					<Spinner />
@@ -280,14 +281,14 @@ function App() {
 						{page == 2 && <Contact />}
 					</div>
 				</div>
-				<div className='absolute right-3 bottom-6 bg-gray-800 px-7 py-3 rounded-full'>
-					<a
-						href='https://calendly.com/theophilusonyebuchinkwuda/30min'
-						className='flex items-center gap-4 capitalize text-gray-50 font-semibold'
-					>
-						<FaPhone size={20} /> reach me
-					</a>
-				</div>
+			</div>
+			<div className='fixed right-3 bottom-6 bg-gray-800 px-7 py-3 rounded-full'>
+				<a
+					href='https://calendly.com/theophilusonyebuchinkwuda/30min'
+					className='flex items-center gap-4 capitalize text-gray-50 font-semibold'
+				>
+					<FaPhone size={20} /> reach me
+				</a>
 			</div>
 		</>
 	);
