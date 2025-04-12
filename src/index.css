@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Risque&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.risque-regular {
+  font-family: "Risque", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style:normal;
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
