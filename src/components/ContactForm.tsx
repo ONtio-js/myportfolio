@@ -1,8 +1,14 @@
-import React from 'react'
+
+import { useState } from 'react';
 import FormField from './FormField'
+import Loader from './Loader';
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
   return (
-    <form action="" className='w-full py-10'>
+    <form action="" className='w-full py-10' onClick={() => setLoading(true)}>
+      {loading && <div className='flex items-center justify-center'>
+        <Loader />
+      </div>}
         <FormField label='Name' type='text' name='name' placeholder='Enter your name' />
         <FormField label='Email' type='email' name='email' placeholder='Enter your email' />
         <FormField label='Subject' type='tel' name='subject' placeholder='Enter subject of your message' />
