@@ -1,46 +1,65 @@
 import FormField from './FormField';
 import Loader from './Loader';
-import { useActionState } from 'react';
+import { useState, useEffect } from 'react';
 
-const handleAction = async ( formData: FormData) => {
-	try {
-		const response = await fetch('https://formspree.io/f/xpwpbepg', {
-			method: 'POST',
-			body: formData,
-			headers: {
-				Accept: 'application/json',
-			},
-		});
-
-		const data = await response.json();
-
-		if (response.ok) {
-			return {
-				success: true,
-				message: 'Message sent successfully!',
-			};
-		} else {
-			return {
-				success: false,
-				errors: data.errors || [
-					'Oops! There was a problem submitting your form',
-				],
-			};
-		}
-	} catch (error) {
-		return {
-			success: false,
-			errors: ['Oops! There was a problem submitting your form'],
-		};
-	}
-};
+type FormState = {
+	success: boolean;
+	message?: string;
+	errors?: string[];
+} | null;
 
 const ContactForm = () => {
-	const [state, formAction, isPending] = useActionState(handleAction, null);
+	const [state, setState] = useState<FormState>(null);
+	const [isPending, setIsPending] = useState(false);
+
+	const handleSubmit = async (formData: FormData) => {
+		setIsPending(true);
+		try {
+			const response = await fetch('https://formspree.io/f/xpwpbepg', {
+				method: 'POST',
+				body: formData,
+				headers: {
+					Accept: 'application/json',
+				},
+			});
+
+			const data = await response.json();
+
+			if (response.ok) {
+				setState({
+					success: true,
+					message: 'Message sent successfully!',
+				});
+			} else {
+				setState({
+					success: false,
+					errors: data.errors || [
+						'Oops! There was a problem submitting your form',
+					],
+				});
+			}
+		} catch (error) {
+			setState({
+				success: false,
+				errors: ['Oops! There was a problem submitting your form'],
+			});
+		} finally {
+			setIsPending(false);
+		}
+	};
+
+	useEffect(() => {
+		if (state?.success) {
+			const timer = setTimeout(() => {
+				setState(null);
+			}, 3000);
+			return () => clearTimeout(timer);
+		}
+	}, [state]);
 
 	return (
 		<form
-			action={formAction}
+			action={handleSubmit}
 			className='w-full py-10'
 		>
 			{isPending && (

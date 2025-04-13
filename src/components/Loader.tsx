@@ -9,7 +9,7 @@ const Loader = () => {
 				fill='#2A2729'
 				stroke='#2A2729'
 				stroke-width='8'
-				r='3'
+				r='3.5'
 				cx='35'
 				cy='100'
 			>
@@ -47,7 +47,7 @@ const Loader = () => {
 				stroke='#2A2729'
 				stroke-width='8'
 				opacity='.6'
-					r='3'
+						r='3'
 				cx='35'
 				cy='100'
 			>
