@@ -7,6 +7,7 @@ import Spinner from './components/Spinner';
 import { motion } from 'framer-motion';
 import { CiMail } from 'react-icons/ci';
 import { FaPhone } from 'react-icons/fa6';
+import MetaTags from './components/MetaTags';
 
 function App() {
 	const [page, setPagee] = useState(2);
@@ -18,7 +19,7 @@ function App() {
 	}, []);
 	if (loading) {
 		return (
-			
+		
 			<div className='h-screen w-screen flex flex-col items-center justify-center'>
 				<div className=' w-[200px] md:w-[400px]'>
 					<Spinner />
@@ -31,6 +32,7 @@ function App() {
 	}
 	return (
 		<>
+			<MetaTags />
 			<div className=' h-screen max-w-[1450px] bg-white mx-auto flex flex-col-reverse justify-center'>
 				<div className=' flex items-center  fixed top-5 left-1/2 -translate-x-1/2  p-1  bg-gray-50 border border-gray-200 rounded-full '>
 					<button
