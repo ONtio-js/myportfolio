@@ -2,7 +2,7 @@ import FormField from './FormField';
 import Loader from './Loader';
 import { useActionState } from 'react';
 
-const handleAction = async (state: any, formData: FormData) => {
+const handleAction = async ( formData: FormData) => {
 	try {
 		const response = await fetch('https://formspree.io/f/xpwpbepg', {
 			method: 'POST',
