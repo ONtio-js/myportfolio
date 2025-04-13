@@ -1,15 +1,14 @@
-
 import { IoLogoFacebook } from 'react-icons/io5';
 import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 const About = () => {
-  return (
-		<div>
-			<motion.div 
+	return (
+		<div className='overflow-x-hidden'>
+			<motion.div
 				initial={{ opacity: 0, y: 10 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.5 }}
-				className='h-[500px] w-full bg-gray-100 flex items-center justify-center overflow-hidden '
+				className='h-[500px] w-full bg-gray-100 flex items-center justify-center  '
 			>
 				{/* my profile picture?/ */}
 				<img
@@ -20,12 +19,12 @@ const About = () => {
 			</motion.div>
 			<div
 				id='experience'
-				className='mt-10 border-t-1 border-gray-200 pt-5'
+				className='mt-10 border-t-1 border-gray-200 pt-5 no-scrollbar overflow-x-auto'
 			>
 				<h2 className='text-4xl font-bold tracking-loose risque-regular'>
 					Experience
 				</h2>
-				<ul className='flex flex-col gap-3 mt-5 w-[1200px] '>
+				<ul className='flex flex-col gap-3 mt-5 min-w-[800px]'>
 					<li className='flex items-center justify-between p-5  text-gray-600 rounded-md '>
 						<h4>2024 - present</h4>
 						<p>Frontend developer</p>
@@ -94,12 +93,12 @@ const About = () => {
 			</div>
 			<div
 				id='education'
-				className='mt-10 border-t-1 border-gray-200 pt-5'
+				className='mt-10 border-t-1 border-gray-200 pt-5 overflow-x-auto no-scrollbar'
 			>
 				<h2 className='text-4xl font-bold tracking-loose risque-regular'>
 					Education
 				</h2>
-				<ul className='flex flex-col gap-3 mt-5 w-[1200px] '>
+				<ul className='flex flex-col gap-3 mt-5 min-w-[800px]'>
 					<li className='flex items-center justify-between px-5 py-5 bg-gray-50 text-gray-600 rounded-md'>
 						<h4>2018 - 2024</h4>
 						<p>Bachelor of Engineering in Civil Engineering</p>
@@ -176,7 +175,7 @@ const About = () => {
 				</ul>
 			</div>
 		</div>
-  );
-}
+	);
+};
 
-export default About
+export default About;

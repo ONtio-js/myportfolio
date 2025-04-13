@@ -9,7 +9,7 @@ import { CiMail } from 'react-icons/ci';
 import { FaPhone } from 'react-icons/fa6';
 
 function App() {
-	const [page, setPagee] = useState(0);
+	const [page, setPagee] = useState(2);
 	const [loading, setLoading] = useState(true);
 	useEffect(() => {
 		setTimeout(() => {
@@ -76,7 +76,7 @@ function App() {
 						Contact
 					</button>
 				</div>
-				<div className=' flex justify-center  mt-20 lg:mt-[35vh] gap-x-10 '>
+				<div className=' flex justify-center  mt-20 lg:mt-[25vh] gap-x-10 '>
 					<div className='hidden lg:block pl-5 w-[400px]'>
 						<div className='w-full'>
 							<motion.div
