@@ -138,15 +138,15 @@ function App() {
 												className='flex gap-2 w-full'
 											>
 												<div className='w-16 h-16 bg-gray-200 rounded-md flex items-center justify-center'>
-													<a
+													<div
 														className='relative flex items-center mx-1 gap-[1px] text-gray-700'
-														href={'/'}
+														
 													>
 														<CiMail size={18} />
 														Hub
 														<span className='absolute -bottom-2 left-0 h-3 w-3  rounded-full bg-yellow-500 transition-all ease-in-out group-hover:right-2'></span>
 														<span className='absolute right-0 -top-2 h-3 w-3  rounded-full bg-green-600 transition-all ease-in-out group-hover:left-0'></span>
-													</a>
+													</div>
 												</div>
 												<div className='flex justify-between items-center w-[80%]'>
 													<div>

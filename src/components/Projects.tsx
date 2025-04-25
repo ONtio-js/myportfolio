@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { GiPadlockOpen } from 'react-icons/gi';
 import { IoArrowRedoOutline } from 'react-icons/io5';
+import { work1, work2, work3 } from '../assets';
 const Projects = () => {
   return (
 		<div className='border-t border-gray-200'>
@@ -30,7 +31,7 @@ const Projects = () => {
 					</div>
 				</div>
 				<img
-					src='/grevego.png'
+					src={work3}
 					alt=''
 					width={800}
 					className='my-10 rounded-xl lg:group-hover:mask-b-from-10% '
@@ -60,7 +61,7 @@ const Projects = () => {
 					</div>
 				</div>
 				<img
-					src='/webmekanic1.png'
+					src={work2}
 					alt=''
 					width={800}
 					className='my-10 rounded-xl lg:group-hover:mask-b-from-10%  '
@@ -90,7 +91,7 @@ const Projects = () => {
 					</div>
 				</div>
 				<img
-					src='/weholdahand1.svg'
+					src={work1}
 					alt=''
 					width={800}
 					className='my-10 rounded-xl lg:group-hover:mask-b-from-10% '

@@ -12,7 +12,7 @@ const About = () => {
 			>
 				{/* my profile picture?/ */}
 				<img
-					src={'/nkwudatheophilus.png'}
+					src={'/theophilus.webp'}
 					alt=''
 					className='w-[500px] h-[500px]  object-cover'
 				/>

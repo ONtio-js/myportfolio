@@ -3,13 +3,17 @@ import { Helmet } from 'react-helmet';
 const MetaTags = () => {
 	return (
 		<Helmet>
+			<title>
+				Theophilus Nkwuda - Expert Full Stack Developer | Web & Mobile
+				App Development
+			</title>
 			<meta
 				name='description'
-				content='Theophilus Nkwuda - A versatile Full Stack Developer with expertise in web development, mobile app development, and modern software solutions. Specializing in React, Node.js, and cross-platform development to create innovative digital experiences.'
+				content='Expert Full Stack Developer Theophilus Nkwuda - Specializing in React, Node.js, TypeScript, and mobile app development. Professional software engineer creating innovative web and mobile solutions.'
 			/>
 			<meta
 				name='keywords'
-				content='full stack developer, web developer, mobile app developer, React developer, Node.js developer, software engineer, TypeScript, Next.js, MongoDB, AWS, Docker, Lagos, Nigeria, portfolio'
+				content='full stack developer, expert developer, web developer, mobile app developer, React developer, Node.js developer, software engineer, TypeScript developer, Next.js developer, professional developer, Lagos developer, Nigeria developer, portfolio'
 			/>
 			<link
 				rel='canonical'
@@ -17,11 +21,11 @@ const MetaTags = () => {
 			/>
 			<meta
 				property='og:title'
-				content='Theophilus Nkwuda | Full Stack & Mobile Developer'
+				content='Theophilus Nkwuda - Expert Full Stack Developer | Web & Mobile Solutions'
 			/>
 			<meta
 				property='og:description'
-				content='Full Stack Developer specializing in web and mobile app development. Expert in React, Node.js, and modern software solutions. Creating innovative digital experiences.'
+				content='Professional Full Stack Developer specializing in React, Node.js, and mobile app development. Expert in creating innovative web and mobile solutions with modern technologies.'
 			/>
 			<meta
 				property='og:url'
@@ -41,11 +45,11 @@ const MetaTags = () => {
 			/>
 			<meta
 				name='twitter:title'
-				content='Theophilus Nkwuda | Full Stack & Mobile Developer'
+				content='Theophilus Nkwuda - Expert Full Stack Developer | Web & Mobile Solutions'
 			/>
 			<meta
 				name='twitter:description'
-				content='Full Stack Developer specializing in web and mobile app development. Expert in React, Node.js, and modern software solutions. Creating innovative digital experiences.'
+				content='Professional Full Stack Developer specializing in React, Node.js, and mobile app development. Expert in creating innovative web and mobile solutions with modern technologies.'
 			/>
 			<meta
 				name='twitter:image'
@@ -56,14 +60,14 @@ const MetaTags = () => {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Theophilus Nkwuda",
-    "url": "https://theophilusnk.dev",
+      "url": "https://theophilusnk.dev",
       "image": "https://theophilusnk.dev/nkwudatheophilus.png",
-      "description": "Full Stack Developer specializing in web and mobile app development. Expert in React, Node.js, and modern software solutions.",
-      "jobTitle": "Full Stack Developer",
+      "description": "Expert Full Stack Developer specializing in React, Node.js, and mobile app development. Professional software engineer creating innovative web and mobile solutions.",
+      "jobTitle": "Expert Full Stack Developer",
       "knowsAbout": ["Web Development", "Mobile App Development", "React", "Node.js", "TypeScript", "Next.js", "MongoDB", "AWS", "Docker"],
       "sameAs": [
         "https://www.facebook.com/tiocode",
-        "https://x.com/tiocode_",
+        "https://x.com/tioc0de",
         "https://www.instagram.com/tioc0de",
         "https://www.linkedin.com/in/ontiojs1",
         "https://github.com/ONtio-js"

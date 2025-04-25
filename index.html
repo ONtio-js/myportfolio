@@ -5,7 +5,7 @@
 		<link
 			rel="icon"
 			type="image/svg+xml"
-			href="/public/theo.png"
+			href="/theo.png"
 		/>
 		<meta
 			name="viewport"
@@ -20,12 +20,59 @@
 			content="full stack developer, web developer, mobile app developer, React developer, Node.js developer, software engineer, Lagos, Nigeria"
 		/>
 		<title>Theophilus Nkwuda | Full Stack & Mobile Developer</title>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			as="image"
+			href="/theo.png"
+		/>
+		<link
+			rel="manifest"
+			href="/manifest.json"
+		/>
+		<meta
+			name="theme-color"
+			content="#000000"
+		/>
+		<meta
+			name="apple-mobile-web-app-capable"
+			content="yes"
+		/>
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			content="black"
+		/>
+		<meta
+			name="apple-mobile-web-app-title"
+			content="Theo Portfolio"
+		/>
+		<link
+			rel="apple-touch-icon"
+			href="/theo.png"
+		/>
+		<style>
+			/* Critical CSS can be inlined here */
+			#root {
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="root"></div>
 		<script
 			type="module"
 			src="/src/main.tsx"
+			defer
 		></script>
 	</body>
 </html>
