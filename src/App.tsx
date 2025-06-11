@@ -10,7 +10,7 @@ import { FaPhone } from 'react-icons/fa6';
 import MetaTags from './components/MetaTags';
 
 function App() {
-	const [page, setPagee] = useState(2);
+	const [page, setPagee] = useState(0);
 	const [loading, setLoading] = useState(true);
 	useEffect(() => {
 		setTimeout(() => {
