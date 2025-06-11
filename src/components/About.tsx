@@ -3,7 +3,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 const About = () => {
 	return (
-		<div className='overflow-x-hidden'>
+		<div className='overflow-x-hidden max-w-[400px]'>
 			<motion.div
 				initial={{ opacity: 0, y: 10 }}
 				animate={{ opacity: 1, y: 0 }}
